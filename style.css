@@ -892,35 +892,46 @@ body {
 }
 
 /* ==========================================
-   REDES SOCIALES - INSTAGRAM VERDE
+   🆕 REDES SOCIALES - CON NOMBRES VISUALES
    ========================================== */
+
 .social-links {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.social-links a {
-  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  gap: 0.5rem;
+}
+
+.social-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
   background: var(--verde-seccion);
   color: var(--verde-principal);
   border: 1.5px solid var(--verde-borde);
   transition: var(--transicion);
   text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.social-item i {
   font-size: 1.1rem;
 }
 
-.social-links a:hover {
+.social-item .social-label {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.social-item:hover {
   background: var(--verde-principal);
   color: var(--blanco);
   border-color: var(--verde-principal);
   transform: translateY(-2px);
-  box-shadow: var(--sombra-fuerte);
+  box-shadow: 0 4px 16px rgba(45, 155, 122, 0.25);
 }
 
 /* ==========================================
@@ -1240,7 +1251,20 @@ body {
   }
 
   .social-links {
-    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .social-item {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .social-item i {
+    font-size: 0.9rem;
+  }
+
+  .social-item .social-label {
+    font-size: 0.65rem;
   }
 }
 
@@ -1502,13 +1526,13 @@ body {
     background: var(--verde-seccion);
   }
 
-  .social-links a {
+  .social-item {
     background: var(--verde-seccion);
     color: var(--verde-principal);
     border-color: var(--verde-borde);
   }
 
-  .social-links a:hover {
+  .social-item:hover {
     background: var(--verde-principal);
     color: var(--blanco);
     border-color: var(--verde-principal);
