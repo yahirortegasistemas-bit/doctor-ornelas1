@@ -1,4 +1,4 @@
-/* ==========================================
+﻿/* ==========================================
    ESTILO MÉDICO - VERDE UNIFORME
    CON ANIMACIONES Y TARJETAS FLIP
    ========================================== */
@@ -1602,4 +1602,54 @@ body {
         opacity: 1;
         transform: scale(1.2);
     }
+}
+
+/* ==========================================
+   PREGUNTAS FRECUENTES (FAQ) - MEJOR CONTRASTE
+   ========================================== */
+
+.faq-section {
+  margin: 2rem 0;
+}
+
+.faq-section h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--verde-oscuro);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faq-section h3 i {
+  color: var(--verde-principal);
+}
+
+.faq-item {
+  background: var(--blanco); /* 🔥 FONDO BLANCO PARA MEJOR CONTRASTE */
+  padding: 1rem 1.5rem;
+  border-radius: var(--radio);
+  border: 2px solid var(--verde-borde); /* 🔥 BORDE MÁS GRUESO Y VISIBLE */
+  margin-bottom: 0.75rem;
+  transition: var(--transicion);
+  box-shadow: var(--sombra);
+}
+
+.faq-item:hover {
+  border-color: var(--verde-principal);
+  box-shadow: var(--sombra-fuerte);
+}
+
+.faq-item h4 {
+  font-weight: 700; /* 🔥 MÁS GRUESO */
+  color: var(--verde-oscuro); /* 🔥 VERDE OSCURO PARA MÁS CONTRASTE */
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.faq-item p {
+  color: var(--gris-oscuro); /* 🔥 GRIS OSCURO PARA MEJOR LECTURA */
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
