@@ -1,392 +1,492 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Alfredo Ornelas Abrego · Cirujano Oncólogo · Tijuana</title>
-  <meta name="description" content="Cirujano oncólogo en Tijuana especialista en cirugía mamaria, ginecológica y tumores en general. Atención personalizada en el Hospital Centro Médico Nova." />
-  <link rel="canonical" href="https://doctorornelas.com" />
-  
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR BLVNK — Playeras</title>
+    <meta name="description" content="Playeras streetwear editorial. Oversize, faded, graphic. Edición limitada.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="tienda.css">
 </head>
 <body>
 
-  <div class="stars-container">
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-  </div>
+    <div class="grain"></div>
 
-<div class="container">
-  <div class="card">
+ <nav class="shop-nav">
+    <div class="shop-nav-top">
+        <button class="shop-icon-btn" aria-label="Buscar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+        </button>
 
-    <!-- ==========================================
-         HEADER - CON FOTO
-         ========================================== -->
-    <header class="profile-header fade-in fade-in-1">
-      <div class="profile-left-with-photo">
-        <div class="photo-container zoom-in">
-          <img src="doctor-ornelas.jpg" alt="Dr. Alfredo Ornelas Abrego" class="doctor-photo" />
+        <a href="index.html" class="shop-logo" aria-label="NOIR BLVNK">
+            <img src="logo.png" alt="NOIR BLVNK">
+        </a>
+
+       <div class="shop-nav-actions">
+    <button class="shop-icon-btn shop-menu-toggle" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <button class="shop-icon-btn" aria-label="Carrito">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+            <path d="M3 6h18"></path>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="shop-cart-badge">0</span>
+    </button>
+</div>
+    </div>
+
+    <div class="shop-nav-bottom">
+        <a href="#" data-filter="todo" class="active">Todo</a>
+        <a href="#newdrop">Nueva Colección</a>
+    </div>
+</nav>
+
+  <!-- BANNER MARQUEE -->
+<div class="shop-banner">
+    <div class="shop-banner-track">
+        <span>New drop playeras 2026</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Pago seguro con PayPal</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Devoluciones 30 días</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Hecho en México</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Algodón peinado 240g</span>
+        <span class="shop-banner-dot">●</span>
+        <!-- Repetir para el loop infinito -->
+        <span>New drop playeras 2026</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Pago seguro con PayPal</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Devoluciones 30 días</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Hecho en México</span>
+        <span class="shop-banner-dot">●</span>
+        <span>Algodón peinado 240g</span>
+        <span class="shop-banner-dot">●</span>
+    </div>
+</div>
+ 
+    <!-- CATÁLOGO -->
+    <main class="shop-main" id="catalogo">
+        <div class="shop-container">
+
+            <div class="shop-section-head">
+                <div>
+                    <span class="shop-section-eyebrow">01 — Catálogo</span>
+                    <h2 class="shop-section-title">Drop 01</h2>
+                </div>
+                <a href="#" class="shop-section-link">Ver todo →</a>
+            </div>
+
+           
+
+                <div class="shop-filters-right">
+                    <div class="shop-sort">
+                        <span>Ordenar:</span>
+                        <select id="sortSelect">
+                            <option value="default">Destacados</option>
+                            <option value="alpha">A - Z</option>
+                            <option value="alpha-desc">Z - A</option>
+                            <option value="price-asc">Precio ↑</option>
+                            <option value="price-desc">Precio ↓</option>
+                        </select>
+                    </div>
+                    <span class="shop-count" id="productCount">8 productos</span>
+                </div>
+            </div>
+
+           <!-- Grid -->
+<div class="shop-grid" id="productGrid">
+
+    <article class="shop-card" data-name="Tijuana San Diego" data-price="700">
+        <a href="producto.html?id=tijuana" class="shop-card-link">
+            <div class="shop-card-image">
+                <span class="shop-card-badge shop-card-badge--new">New</span>
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="noirclub.jpg" alt="Tijuana San Diego">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">Tijuana - San Diego</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$700 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Graphic · Amarillo</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="Angel Numbers" data-price="650">
+        <a href="producto.html?id=angel-numbers" class="shop-card-link">
+            <div class="shop-card-image">
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="race.jpg" alt="Angel Numbers">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">Angel Numbers</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$650 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Graphic · Negro</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="Lucky222 Black" data-price="650">
+        <a href="producto.html?id=lucky222" class="shop-card-link">
+            <div class="shop-card-image">
+                <span class="shop-card-badge shop-card-badge--sale">Oferta</span>
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="boxing.jpg" alt="Lucky222">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">Lucky222 - Black</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price shop-card-price--sale">$650 MXN</span>
+                    <span class="shop-card-price-old">$800 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Oferta · Negro</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="Consistency Japon" data-price="650">
+        <a href="producto.html?id=consistency" class="shop-card-link">
+            <div class="shop-card-image">
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="feardeath.jpg" alt="Consistency">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">Consistency (Japón)</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$650 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Basics · Blanco</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="Tony Faded Black" data-price="700">
+        <a href="producto.html?id=tony" class="shop-card-link">
+            <div class="shop-card-image">
+                <span class="shop-card-badge shop-card-badge--exclusive">Exclusivo</span>
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="run.jpg" alt="Tony">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">"Tony" - Faded Black</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$700 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Faded · Negro</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="World Black" data-price="700">
+        <a href="producto.html?id=world" class="shop-card-link">
+            <div class="shop-card-image">
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="race2.jpeg" alt="World Black">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">"World" - Black</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$700 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Graphic · Negro</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="Right Place Right Time" data-price="650">
+        <a href="producto.html?id=right-place" class="shop-card-link">
+            <div class="shop-card-image">
+                <span class="shop-card-badge shop-card-badge--new">New</span>
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="race1.jpeg" alt="Right Place">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">Right Place - Right Time</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$650 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Basics · Beige</p>
+            </div>
+        </a>
+    </article>
+
+    <article class="shop-card" data-name="Tutto Passa" data-price="650">
+        <a href="producto.html?id=tutto-passa" class="shop-card-link">
+            <div class="shop-card-image">
+                <button class="shop-card-fav" aria-label="Favorito">♡</button>
+                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800" alt="Tutto Passa">
+                <div class="shop-card-hover"><span>Añadir rápido</span></div>
+            </div>
+            <div class="shop-card-info">
+                <h3 class="shop-card-title">"Tutto Passa"</h3>
+                <div class="shop-card-prices">
+                    <span class="shop-card-price">$650 MXN</span>
+                </div>
+                <p class="shop-card-meta">Playera · Faded · Negro</p>
+            </div>
+        </a>
+    </article>
+
+</div>
+
+<!-- CARRUSEL -->
+<section class="shop-carousel-section" id="newdrop">
+    <div class="shop-carousel-head">
+        <div>
+            <span class="shop-section-eyebrow">02 — New Drop</span>
+            <h2 class="shop-section-title">Edición Limitada</h2>
+            <p class="shop-carousel-sub">Serie numerada — Algodón peinado 240g</p>
         </div>
-        <div class="profile-text fade-in fade-in-2">
-          <h1 class="shine-text">Dr. Alfredo Ornelas Abrego</h1>
-          <div class="specialty-main">
-            <i class="fas fa-user-md"></i> Cirujano Oncólogo
-          </div>
-         <div class="education-info">
-           <i class="fas fa-graduation-cap"></i> <span class="education-text">Médico General · UABC | Postgraduado en cirugía oncologica en el Centro Médico Nacional Siglo XXI</span>
-       </div>
-          <div class="trust-message">
-            <i class="fas fa-heart"></i> Atención personalizada y seguimiento médico especializado
-          </div>
-          <div class="location-cedula">
-            <span><i class="fas fa-map-pin"></i> Tijuana · Hospital Centro Médico Nova</span>
-            <span class="separator">|</span>
-            <span><i class="fas fa-id-card"></i> Cédula: 5607019</span>
-          </div>
+
+        <div class="shop-carousel-controls">
+            <button class="carousel-btn" id="carouselPrev" aria-label="Anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="carousel-btn" id="carouselNext" aria-label="Siguiente">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
         </div>
-      </div>
+    </div>
+
+    <div class="shop-carousel">
+        <div class="shop-carousel-track" id="carouselTrack">
+
+            <article class="carousel-card">
+                <a href="producto.html?id=tijuana" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <span class="carousel-card-badge">New</span>
+                        <img src="noirclub.jpg" alt="Tijuana - San Diego">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Graphic</span>
+                        <h3 class="carousel-card-title">Tijuana - San Diego</h3>
+                        <span class="carousel-card-price">$700 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=lucky222" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <span class="carousel-card-badge">Oferta</span>
+                        <img src="boxing.jpg" alt="Lucky222 - Black">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Oferta</span>
+                        <h3 class="carousel-card-title">Lucky222 - Black</h3>
+                        <span class="carousel-card-price">$650 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=tony" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <span class="carousel-card-badge">Exclusivo</span>
+                        <img src="run.jpg" alt="Tony Faded Black">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Faded</span>
+                        <h3 class="carousel-card-title">"Tony" - Faded Black</h3>
+                        <span class="carousel-card-price">$700 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=world" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <img src="race2.jpeg" alt="World Black">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Graphic</span>
+                        <h3 class="carousel-card-title">"World" - Black</h3>
+                        <span class="carousel-card-price">$700 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=right-place" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <span class="carousel-card-badge">New</span>
+                        <img src="race1.jpeg" alt="Right Place - Right Time">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Basics</span>
+                        <h3 class="carousel-card-title">Right Place - Right Time</h3>
+                        <span class="carousel-card-price">$650 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=consistency" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <img src="feardeath.jpg" alt="Consistency (Japón)">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Basics</span>
+                        <h3 class="carousel-card-title">Consistency (Japón)</h3>
+                        <span class="carousel-card-price">$650 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=angel-numbers" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <img src="race.jpg" alt="Angel Numbers">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Graphic</span>
+                        <h3 class="carousel-card-title">Angel Numbers</h3>
+                        <span class="carousel-card-price">$650 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+            <article class="carousel-card">
+                <a href="producto.html?id=tutto-passa" class="carousel-card-link">
+                    <div class="carousel-card-image">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800" alt="Tutto Passa">
+                    </div>
+                    <div class="carousel-card-info">
+                        <span class="carousel-card-cat">Faded</span>
+                        <h3 class="carousel-card-title">"Tutto Passa"</h3>
+                        <span class="carousel-card-price">$650 MXN</span>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+
+        <div class="shop-carousel-progress">
+            <div class="shop-carousel-progress-bar" id="carouselProgress"></div>
+        </div>
+    </div>
+</section>
+  
+    <!-- FOOTER -->
+    <footer class="shop-footer">
+        <div class="shop-footer-container">
+            <div class="shop-footer-newsletter">
+                <h2 class="shop-footer-title">Únete al club</h2>
+                <p class="shop-footer-sub">Entérate primero de nuevos drops y ofertas exclusivas.</p>
+                <form class="shop-footer-form" id="newsletterForm">
+                    <input type="email" name="email" placeholder="tu@correo.com" required>
+                    <button type="submit">Suscribirme →</button>
+                </form>
+            </div>
+
+            <div class="shop-footer-brand">
+                <h3 class="shop-footer-logo">NOIR BLVNK</h3>
+                <p class="shop-footer-tagline">
+                </p>
+                <div class="shop-footer-social">
+               <a href="https://www.instagram.com/noirblvnk/" target="_blank" rel="noopener" aria-label="Instagram">
+               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+       <a href="#" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+        </svg>
+    </a>
+</div>
+
+            <div class="shop-footer-links">
+                <div class="shop-footer-col">
+                    <h4>Tienda</h4>
+                    <a href="#">Catálogo completo</a>
+                    <a href="#">Nuevos drops</a>
+                    <a href="#">Guía de tallas</a>
+                </div>
+                <div class="shop-footer-col">
+                    <h4>Marca</h4>
+                    <a href="#">Manifiesto</a>
+                    <a href="#">Lookbook</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="shop-footer-col">
+                    <h4>Ayuda</h4>
+                    <a href="#">Envíos y devoluciones</a>
+                    <a href="#">Seguimiento</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="shop-footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Términos</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+            <div class="shop-footer-bottom">
+                <p>© 2026 NOIR BLVNK. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+     MENÚ LATERAL
+============================================= -->
+<div class="nb-menu-overlay" id="nbMenuOverlay"></div>
+
+<aside class="nb-menu" id="nbMenu" aria-label="Menú">
+    <header class="nb-menu-header">
+        <span class="nb-menu-eyebrow">Menú</span>
+        <button class="nb-menu-close" id="nbMenuClose" aria-label="Cerrar">✕</button>
     </header>
 
-    <!-- ==========================================
-         ESPECIALIDADES
-         ========================================== -->
-    <div class="specialties-section fade-in fade-in-3">
-      <div class="specialty-item">
-        <i class="fas fa-female"></i>
-        <span>Cirugía Mamaria</span>
-      </div>
-      <div class="specialty-item">
-        <i class="fas fa-uterus"></i>
-        <span>Cirugía Ginecológica</span>
-      </div>
-      <div class="specialty-item">
-        <i class="fas fa-bolt"></i>
-        <span>Oncología Quirúrgica General</span>
-      </div>
-    </div>
+    <nav class="nb-menu-nav">
+        <a href="index.html" class="nb-menu-link">Todo</a>
+        <a href="index.html#newdrop" class="nb-menu-link">Nueva Colección</a>
+        <a href="index.html#catalogo" class="nb-menu-link">Catálogo</a>
+    </nav>
 
-    <!-- ==========================================
-         CONTACTO
-         ========================================== -->
-    <div class="contact-actions fade-in fade-in-4">
-      <!-- Llamada al consultorio -->
-      <a href="tel:6646840579" class="btn btn-call">
-        <i class="fas fa-phone-alt"></i> Llamar al consultorio
-      </a>
-      <!-- WhatsApp (el que ya estaba) -->
-      <a href="https://wa.me/+526635949820?text=Hola%20Dr.%20Ornelas%2C%20necesito%20una%20consulta" target="_blank" rel="noopener" class="btn btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-      <!-- Correo -->
-       <!-- Correo -->
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=drornelasoncologia@hotmail.com" target="_blank" rel="noopener" class="btn btn-appointment">
-        <i class="fas fa-envelope"></i> Enviar correo
-      </a>
-    </div>
-
-    <!-- ==========================================
-         TELÉFONOS - CON DOS NÚMEROS
-         ========================================== -->
-    <div class="phones-section fade-in fade-in-5">
-      <div class="phone-item">
-        <i class="fas fa-phone"></i>
-        <span>Consultorio: <strong>664 684 0579</strong></span>
-      </div>
-      <div class="phone-item">
-        <i class="fas fa-phone"></i>
-        <span>Recepción: <strong>664 204 7281</strong></span>
-      </div>
-      <div class="phone-item">
-        <i class="fab fa-whatsapp" style="color: #25D366;"></i>
-        <span>WhatsApp: <strong>663 594 9820</strong></span>
-      </div>
-    </div>
-
-    <!-- ==========================================
-         HERO
-         ========================================== -->
-    <section class="hero-section slide-up slide-up-1">
-      <h2>Cirugía oncológica con enfoque humano</h2>
-      <p>Atención especializada en Tijuana para tumores mamarios, ginecológicos y de tejidos blandos con seguridad clínica y calidad humana.</p>
-      <div class="hero-highlights">
-        <span class="experience-text">
-          Más de <strong><span id="counter-years">0</span> años</strong> de experiencia en cirugía oncológica
-        </span>
-        <span>Consultorio en Hospital Centro Médico Nova</span>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         PERFIL PROFESIONAL
-         ========================================== -->
-    <section class="professional-summary slide-up slide-up-2">
-      <h3>Perfil profesional</h3>
-      <p>Cirujano oncólogo comprometido con diagnósticos precisos, tratamientos seguros y un seguimiento cercano durante todo el proceso.</p>
-      <ul>
-        <li>Formación especializada en cirugía oncológica y tratamiento de cáncer.</li>
-        <li>Experiencia en cirugía mamaria, ginecológica y tumores de tejidos blandos.</li>
-        <li>Acompañamiento médico desde la consulta inicial hasta la recuperación.</li>
-      </ul>
-    </section>
-
-    <!-- ==========================================
-     PREGUNTAS FRECUENTES (FAQ)
-     ========================================== -->
-<section class="faq-section slide-up slide-up-4">
-  <h3><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h3>
-  <div class="faq-item">
-    <h4>¿Cómo sé si necesito una cirugía oncológica?</h4>
-    <p>Una valoración médica con el Dr. Ornelas es el primer paso. Se realizarán estudios y análisis para determinar el mejor tratamiento para tu caso.</p>
-  </div>
-  <div class="faq-item">
-    <h4>¿La cirugía oncológica es dolorosa?</h4>
-    <p>El procedimiento se realiza con anestesia general para que no sientas dolor durante la cirugía. Después, se te dará un plan de manejo del dolor para tu recuperación.</p>
-  </div>
-  <div class="faq-item">
-    <h4>¿Cuánto tiempo tarda la recuperación?</h4>
-    <p>Depende del tipo de cirugía, pero en promedio, la recuperación inicial es de 2 a 6 semanas, con un seguimiento continuo para asegurar tu bienestar.</p>
-  </div>
-</section>
-
-    <!-- ==========================================
-         BENEFICIOS - TARJETAS FLIP
-         ========================================== -->
-    <div class="benefits-grid slide-up slide-up-3">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <i class="fas fa-microscope"></i>
-            <h4>Cirugía Avanzada</h4>
-            <p>Técnicas mínimamente invasivas con tecnología de punta.</p>
-          </div>
-          <div class="flip-card-back">
-            <i class="fas fa-microscope"></i>
-            <p>Recuperación más rápida, menos dolor y cicatrices mínimas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <i class="fas fa-user-md"></i>
-            <h4>Experiencia Comprobada</h4>
-            <p>Postgraduado en el Centro Médico Nacional Siglo XXI.</p>
-          </div>
-          <div class="flip-card-back">
-            <i class="fas fa-user-md"></i>
-            <p>Más de 30 años de experiencia en cirugía oncológica.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <i class="fas fa-heart"></i>
-            <h4>Atención Integral</h4>
-            <p>Seguimiento personalizado desde la consulta inicial.</p>
-          </div>
-          <div class="flip-card-back">
-            <i class="fas fa-heart"></i>
-            <p>Acompañamiento médico en cada etapa y plan de recuperación.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ==========================================
-         ¿QUÉ TRATAMOS?
-         ========================================== -->
-    <div class="info-block slide-up slide-up-4">
-      <h3>¿Qué tratamos?</h3>
-      <p>Especialista en cirugía oncológica con enfoque en:</p>
-      <ul>
-        <li><i class="fas fa-circle"></i> Cirugía de tumores mamarios (benignos y malignos)</li>
-        <li><i class="fas fa-circle"></i> Cirugía ginecológica oncológica</li>
-        <li><i class="fas fa-circle"></i> Tumores de tejidos blandos</li>
-        <li><i class="fas fa-circle"></i> Tumores gastrointestinales</li>
-        <li><i class="fas fa-circle"></i> Cirugía de cáncer en general</li>
-      </ul>
-    </div>
-
-    <!-- ==========================================
-         TESTIMONIOS - CON TARJETAS MEJORADAS
-         ========================================== -->
-    <section class="testimonials slide-up slide-up-5">
-      <h3><i class="fas fa-star"></i> Testimonios de Pacientes</h3>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>"Excelente doctor, muy profesional y explica a detalle. Ampliamente recomendado."</p>
-          <div class="author">Wendy Santos</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>"Muy profesional, excelente trato y calidad humana. Sin duda el mejor."</p>
-          <div class="author">Sarai Ortiz</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>"Honesto, comprometido y muy preparado. Excelente cirujano, totalmente recomendado."</p>
-          <div class="author">Yahir Ramos</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>"Mi vida cambió por completo, ya no sufro dolor. Excelente atención y seguimiento."</p>
-          <div class="author">María G.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         UBICACIÓN
-         ========================================== -->
-    <div class="location-section slide-up slide-up-6">
-      <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
-      <div class="location-details">
-        <p>
-          <strong>Hospital Centro Médico Nova</strong><br />
-          Guadalupe Victoria No.9308 2do. Piso<br />
-          Int. 205 Zona Río<br />
-          Tijuana, México
-        </p>
-        <a href="https://maps.google.com/?q=Hospital+Centro+Médico+Nova+Tijuana" target="_blank" rel="noopener" class="btn-maps">
-          <i class="fas fa-directions"></i> Cómo llegar
-        </a>
-      </div>
-    </div>
-
-    <!-- ==========================================
-         CTA FINAL
-         ========================================== -->
-    <div class="cta-section slide-up slide-up-7">
-      <h3>Agenda tu Consulta Hoy</h3>
-      <p>Recibe atención especializada y soluciona tu problema de salud de forma definitiva.</p>
-      <div class="cta-buttons">
-        <a href="tel:6646840579" class="btn btn-call">
-          <i class="fas fa-phone-alt"></i> Llamar ahora
-        </a>
-        <a href="https://wa.me/+526635949820?text=Hola%20Dr.%20Ornelas%2C%20necesito%20una%20consulta" target="_blank" rel="noopener" class="btn btn-whatsapp">
-          <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-      </div>
-    </div>
-
-    <!-- ==========================================
-         FOOTER - CON DOS INSTAGRAM Y DOS TELÉFONOS
-         ========================================== -->
-    <footer class="footer-info fade-in fade-in-6">
-      <div class="dir">
-        <i class="fas fa-map-marker-alt"></i>
-        Hospital Centro Médico Nova · Guadalupe Victoria No.9308 2do. Piso, Int. 205 · Zona Río, Tijuana
-      </div>
-
-      <!-- 📞 DOS TELÉFONOS -->
-      <div class="footer-contacts">
-        <span>
-          <i class="fas fa-phone"></i>
-          <a href="tel:6646840579" style="color: var(--verde-principal); text-decoration: none;">664 684 0579</a>
-        </span>
-        <span>
-          <i class="fas fa-phone"></i>
-          <a href="tel:6635949820" style="color: var(--verde-principal); text-decoration: none;">663 594 9820</a>
-        </span>
-        <span>
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:drornelasoncologia@hotmail.com" style="color: var(--verde-principal); text-decoration: none;">drornelasoncologia@hotmail.com</a>
-        </span>
-      </div>
-
-  <div class="social-links">
-  <a href="https://www.instagram.com/hospital.nova/?hl=es" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Instagram del Hospital Nova">
-    <i class="fab fa-instagram"></i>
-    <span class="social-label">@Hospital Nova</span>
-  </a>
-  <a href="https://www.instagram.com/dr.ornelasoncocirugia" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Instagram del Dr. Ornelas - Cirugía">
-    <i class="fab fa-instagram"></i>
-    <span class="social-label">@dr.ornelasoncocirugia</span>
-  </a>
+    <div class="nb-menu-footer">
+    <a href="https://www.instagram.com/noirblvnk/" target="_blank" rel="noopener" class="nb-menu-social">Instagram</a>
+    <a href="#" target="_blank" rel="noopener" class="nb-menu-social">TikTok</a>
+    <a href="#" target="_blank" rel="noopener" class="nb-menu-social">WhatsApp</a>
 </div>
+</aside>
 
-    <!-- ==========================================
-         AVISO DE PRIVACIDAD
-         ========================================== -->
-    <div class="privacy-notice fade-in fade-in-7">
-      <p>
-        AVISO DE PRIVACIDAD: De conformidad con la Ley Federal de Protección de Datos Personales,
-        sus datos serán utilizados únicamente para fines médicos y de contacto.
-      </p>
-    </div>
-
-  </div>
-</div>
-
-<!-- ==========================================
-     JAVASCRIPT
-     ========================================== -->
-<script src="script.js"></script>
-
-<!-- ==========================================
-     SCHEMA.ORG (SEO)
-     ========================================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Physician",
-  "name": "Dr. Alfredo Ornelas Abrego",
-  "description": "Cirujano oncólogo en Tijuana especialista en cirugía mamaria, ginecológica y tumores en general.",
-  "medicalSpecialty": ["Cirugía Mamaria", "Cirugía Ginecológica", "Oncología Quirúrgica"],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Guadalupe Victoria No.9308 2do. Piso, Int. 205",
-    "addressLocality": "Tijuana",
-    "addressRegion": "Baja California",
-    "addressCountry": "México"
-  },
-  "telephone": "+52-664-684-0579",
-  "url": "https://doctorornelas.com",
-  "identifier": {
-    "@type": "PropertyValue",
-    "name": "Cédula profesional",
-    "value": "5607019"
-  }
-}
-</script>
-
+    <script src="tienda.js"></script>
 </body>
 </html>
